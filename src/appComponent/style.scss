@@ -1,0 +1,16 @@
+.app {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 64px;
+
+  &__color {
+    color: white;
+    width: 20%;
+    list-style: none;
+  }
+}
+.button {
+  width: 250px;
+}
