@@ -1,7 +1,8 @@
 import { useState } from "react";
+import AtomsInput from "../Atoms/input.jsx";
 import "./style.scss";
 
-const App = () => {
+const MoleculesInput = () => {
   const [name, setName] = useState("Pedro Henrique");
   const [newName, setNewName] = useState("");
   const [inputError, setInputError] = useState(false);
@@ -10,7 +11,6 @@ const App = () => {
     if (!newName.trim()) {
       setInputError(true);
     } else {
-      console.log(newName);
       setName(newName);
       setNewName("");
       setInputError(false);
@@ -20,32 +20,33 @@ const App = () => {
   return (
     <>
       <h1>{name}</h1>
-      <div className="input">
-        <input
-          type="text"
-          style={{ borderColor: inputError ? "red" : "black" }}
-          placeholder="Enter your last name"
+      <section className="input">
+        <AtomsInput
+          errors={inputError}
           value={newName}
-          onChange={(e) => {
+          onClick={(e) => {
             setNewName(e.target.value);
             setInputError(false);
           }}
         />
         {inputError && (
-          <p style={{ color: "red", position: "absolute", top: "118px" }}>
-            Não pode enviar campo vazio
-          </p>
+          <p className="input__error">Não pode enviar campo vazio</p>
         )}
 
         <div className="input__buttons">
           <button onClick={handleButton}>Mudar nome</button>
-          <button onClick={() => setName("Pedro Henrique")}>
+          <button
+            onClick={() => {
+              setName("Pedro Henrique");
+              setNewName("");
+            }}
+          >
             Voltar para o nome original
           </button>
         </div>
-      </div>
+      </section>
     </>
   );
 };
 
-export default App;
+export default MoleculesInput;

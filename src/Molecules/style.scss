@@ -10,4 +10,11 @@
     flex-direction: column;
     gap: 8px;
   }
+
+  &__error {
+    color: red;
+    font-size: 14px;
+    position: absolute;
+    top: 120px;
+  }
 }
