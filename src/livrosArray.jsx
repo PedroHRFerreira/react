@@ -1,5 +1,5 @@
 import React from "react";
-const livrosArray = () => {
+const LivrosArray = () => {
   const livros = [
     { nome: "A Game of Thrones", ano: 1996, description: "Fantasia" },
     { nome: "A Clash of Kings", ano: 1998, description: "" },
@@ -21,4 +21,4 @@ const livrosArray = () => {
   );
 };
 
-export default livrosArray;
+export default LivrosArray;

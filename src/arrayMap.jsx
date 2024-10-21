@@ -1,5 +1,5 @@
 import React from "react";
-const arrayMap = () => {
+const ArrayMap = () => {
   const Mario = {
     cliente: "Mario",
     idade: 31,
@@ -56,4 +56,4 @@ const arrayMap = () => {
     </>
   );
 };
-export default arrayMap;
+export default ArrayMap;
