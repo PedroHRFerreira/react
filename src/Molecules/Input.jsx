@@ -30,10 +30,10 @@ const MoleculesInput = () => {
           }}
         />
         {inputError && (
-          <p className="input__error">Não pode enviar campo vazio</p>
+          <p className="input--error">Não pode enviar campo vazio</p>
         )}
 
-        <div className="input__buttons">
+        <div className="input--buttons">
           <button onClick={handleButton}>Mudar nome</button>
           <button
             onClick={() => {

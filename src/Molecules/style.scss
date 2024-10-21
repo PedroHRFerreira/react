@@ -4,14 +4,14 @@
   flex-direction: column;
   gap: 24px;
 
-  &__buttons {
+  &--buttons {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 8px;
   }
 
-  &__error {
+  &--error {
     color: red;
     font-size: 14px;
     position: absolute;
