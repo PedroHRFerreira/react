@@ -22,6 +22,7 @@ const MoleculesInput = () => {
       <h1>{name}</h1>
       <section className="input">
         <AtomsInput
+          type="text"
           errors={inputError}
           value={newName}
           onClick={(e) => {

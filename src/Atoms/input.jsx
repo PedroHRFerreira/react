@@ -1,7 +1,7 @@
-const AtomsInput = ({ value, onClick, errors }) => {
+const AtomsInput = ({ type, value, onClick, errors }) => {
   return (
     <input
-      type="text"
+      type={type}
       placeholder="Enter your last name"
       maxLength="30"
       style={{ borderColor: errors ? "red" : "black" }}
