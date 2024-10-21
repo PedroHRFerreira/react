@@ -41,18 +41,18 @@ const App = () => {
   };
 
   return (
-    <section>
+    <section className="app-section">
       {cp.map((item) => (
         <div key={item.id}>
           {item.ativo && (
-            <div className="app">
+            <div className="app-section__div">
               <h1>{item.nome}</h1>
               <h2>Preço: {item.preco}</h2>
               <h2>
                 {item.cores.map((cor) => (
                   <li
                     key={cor}
-                    className="app__color"
+                    className="app-section__div--cores"
                     style={{
                       backgroundColor: cor,
                     }}
