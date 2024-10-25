@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Calculator from "./Molecules/Calculator/calculator.jsx";
+import SimulateEndpoint from "./Molecules/SimulateEndpoint/simulateEndpoint.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <main>
-    <Calculator />
+    <SimulateEndpoint />
   </main>
 );
